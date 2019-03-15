@@ -3,6 +3,9 @@
 % NOTE: reference
 % https://arxiv.org/pdf/1604.05488.pdf
 
+% HAGAR, first telescope to operate at an elevation > 4km
+% http://www.tifr.res.in/~hagar/
+% https://en.wikipedia.org/wiki/Indian_Astronomical_Observatory
 
 
 \mode<presentation> {\usetheme{Madrid}}
@@ -12,6 +15,7 @@
 \usepackage{amsmath, amsthm, amssymb, mathtools}
 \usepackage{hyperref}
 \usepackage{flexisym}
+\usepackage{mhchem}
 \graphicspath{{./img/}}
 
 \title[TeV Astrophysics]{Astronomical facilities and instrumentation in TeV}
@@ -36,9 +40,9 @@ National Tsing Hua University \\
 
 
 
-
-\section{Introduction to Tev $\gamma$ ray}
+%%%% Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction to Tev $\gamma$ ray}
 \begin{frame}{Introduction to Tev $\gamma$ ray}
 	\begin{itemize}
 		\item $\gamma$ ray production mechanisms
@@ -49,7 +53,7 @@ National Tsing Hua University \\
 \end{frame}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{$\gamma$ ray production mechanisms}
 \begin{frame}{$\gamma$ ray production mechanisms}
 	There are several ways to generate cosmic gamma rays:
@@ -72,7 +76,19 @@ National Tsing Hua University \\
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Origin of TeV Photons}
+\begin{frame}{Origin of TeV Photons}
+	leptonic models: inverse Compton scattering
 
+	$\gamma + e^-(e^+) \rightarrow \gamma + e^-(e^+) \Rightarrow \text{photon get energy} $
+	\newline
+	\newline
+	hadronic models: $\pi^0 \ \text{decay}$, synchrotron radiation from ultra-relativistic protons
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Astrophysical sources of high-energy $\gamma$ rays}
 \begin{frame}{Astrophysical sources of high-energy $\gamma$ rays}
 	\begin{enumerate}
@@ -87,7 +103,7 @@ National Tsing Hua University \\
 \end{frame}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Detection method}
 \begin{frame}{Ground-based detector}
 	challenges:
@@ -105,12 +121,7 @@ National Tsing Hua University \\
 \end{frame}
 
 
-\begin{frame}{Space-based detector}
-
-\end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Cherenkov radiation}
 \begin{frame}{Cherenkov radiation}
 	\begin{figure}[h]
@@ -125,20 +136,23 @@ National Tsing Hua University \\
 \end{frame}
 
 
+%%%% Detectors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Detectors}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Detectors}
 	\begin{itemize}
 		\item OSO-3 satellite detector
-		\item ICAT
-
+		\item Current ICAT
+		\item Future ICAT
 	\end{itemize}
 \end{frame}
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{OSO-3 satellite}
 \begin{frame}{OSO-3 satellite}
 	OSO 3 (Orbiting Solar Observatory 3)
-
 	\begin{enumerate}
 		\item Mar. 8, 1967: launched on
 		\item Jun. 28, 1968: tape recorder failed
@@ -152,11 +166,12 @@ National Tsing Hua University \\
 
 
 
-\subsection{ICAT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Current ICAT}
 \begin{frame}{ICAT Properties}
 	Properties:
 	\begin{enumerate}
-		\item 50 GeV ~ 50 TeV in photon energy range
+		\item 50 GeV $\sim$ 50 TeV in photon energy range
 		\item ground-based detector
 		\item Wider energy regime than space-based instruments
 		\item largest telescope at the highest altitude
@@ -169,14 +184,17 @@ National Tsing Hua University \\
 \begin{frame}{ICAT components}
 	Imaging Atmospheric (or Air) Cherenkov Telescope or Technique
 	\newline
-	\newline
-	Four operating IACT systems:
+	Operating IACT systems:
 	\begin{enumerate}
 		\item High Energy Stereoscopic System (H.E.S.S.)
 		\item Major Atmospheric Gamma Imaging Cherenkov Telescopes (MAGIC)
 		\item First G-APD Cherenkov Telescope (FACT)
 		\item Very Energetic Radiation Imaging Telescope Array System (VERITAS)
+		\item Collaboration of Australia and Nippon for a Gamma Ray Observatory in the Outback (CANGAROO-III)
 	\end{enumerate}
+	\begin{figure}[h]
+		\includegraphics[width=350px]{IACT_tables.png}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{ICAT components}
@@ -189,9 +207,130 @@ National Tsing Hua University \\
 \begin{frame}{ICAT components}
 	\begin{figure}[h]
 		\includegraphics[width=200px]{dishes.png}
-		\caption{Illustration of the combination in H.E.S.S. (upper panel) of large dishes as in Whipple (lower left), fast and fine grained cameras as in CAT (lower centre) and stereoscopic observation as in HEGRA (lower right)].}
+		\caption{Illustration of the combination in H.E.S.S. (upper panel) of large dishes as in Whipple (lower left), fast and fine grained cameras as in CAT (lower centre) and stereoscopic observation as in HEGRA (lower right).}
 	\end{figure}
 \end{frame}
+
+
+\begin{frame}{ICAT components}
+	\begin{figure}[h]
+		\includegraphics[width=230px]{snesitivities.png}
+		\caption{Energy-flux sensitivities of current and future ground-based detectors - the IACT and EAS arrays in the energy range $10^{10}$ to $10^{15}$ eV (courtesy of G. Sinnis).}
+	\end{figure}
+\end{frame}
+
+
+%% shown detectors
+\begin{frame}{ICAT: FACT}
+	G-APD: a new semiconductor device with excellent single photon response became available: the so-called Geiger-mode Avalanche Photodiodes.
+	\begin{figure}[h]
+		\includegraphics[width=280px]{PMTvsAPD.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: FACT}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{DetectorsGuidepost.jpg}
+	\end{figure}
+\end{frame}
+
+% \begin{frame}{ICAT: FACT}
+% 	The Photomultiplier (PM) tube
+% 	\begin{itemize}
+% 		\item Detection of very weak scintillation light
+% 		\item Provide electrical signal
+% 		\item Can be also done with silicon photodiodes, but PM are most widely used
+% 		\item Characterized by spectral sensitivity
+% 	\end{itemize}
+% \end{frame}
+
+
+% \begin{frame}{ICAT: FACT}
+	% Structure of PM tube
+	% \begin{figure}[h]
+		% \includegraphics[width=280px]{PM_tube_structure.png}
+	% \end{figure}
+% \end{frame}
+
+
+\begin{frame}{ICAT: FACT}
+	First G-APD Cherenkov Telescope (FACT), which is based on a former HEGRA telescope.
+	\newline
+	Upgrade:
+	\begin{itemize}
+		\item refurbished mirrors
+		\item drive system
+		\item data acquisition system
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: FACT}
+	Mirrors:
+	\begin{itemize}
+		\item hexagonal shape surface with total area 9.51$m^2$
+		\item re-machined by diamond-milling and subsequent coating with \ce{SiO2}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S.}
+	High Energy Stereoscopic System (H.E.S.S.)
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+	Major Atmospheric Gamma Imaging Cherenkov Telescopes (MAGIC)
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+	Very Energetic Radiation Imaging Telescope Array System (VERITAS)
+\end{frame}
+
+
+\begin{frame}{ICAT: CANGAROO-III}
+	CANGAROO-III (Collaboration of Australia and Nippon for a Gamma Ray Observatory in the Outback)
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Future ICAT}
+\begin{frame}{Future ICAT improvement}
+	Improvement:
+	\begin{enumerate}
+		\item enhance flux sensitivities in TeV regime (0.1-10 TeV)
+		\item expand energy domain: down to 10 GeV (multi-GeV regime) and well beyond 10 TeV (sub-PeV regime)
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Future ICAT improvement}
+	Improvement:b
+	\begin{enumerate}
+		\item enhance flux sensitivities in TeV regime (0.1-10 TeV)
+		\item expand energy domain: down to 10 GeV (multi-GeV regime) and well beyond 10 TeV (sub-PeV regime)
+
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Future ICAT: TeV regime}
+	\begin{enumerate}
+		\item minimum detectable energy flux: $10$ erg$/ \text{cm}^2 $ s
+		\item angular resolution: $\delta \theta \leq 3$ arc minutes.
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Next generation CTA}
+	\begin{figure}[h]
+		\includegraphics[width=300px]{next-generationCTA.png}
+		\caption{Possible layout of the next-generation CTA instrument.
+		From Ref}
+	\end{figure}
+\end{frame}
+
+
 
 
 \end{document}
