@@ -16,6 +16,7 @@
 \usepackage{hyperref}
 \usepackage{flexisym}
 \usepackage{mhchem}
+\usepackage[export]{adjustbox}
 \graphicspath{{./img/}}
 
 \title[TeV Astrophysics]{Astronomical facilities and instrumentation in TeV}
@@ -257,11 +258,11 @@ National Tsing Hua University \\
 \begin{frame}{ICAT: FACT}
 	First G-APD Cherenkov Telescope (FACT), which is based on a former HEGRA telescope.
 	\newline
+	\\
 	Upgrade:
 	\begin{itemize}
 		\item refurbished mirrors
 		\item drive system
-		\item data acquisition system
 	\end{itemize}
 \end{frame}
 
@@ -272,11 +273,123 @@ National Tsing Hua University \\
 		\item hexagonal shape surface with total area 9.51$m^2$
 		\item re-machined by diamond-milling and subsequent coating with \ce{SiO2}.
 	\end{itemize}
+	\hfill \break
+	Drive system:
+	\begin{itemize}
+		\item down-scaled version of the drive system implemented in the MAGIC telescopes
+	\end{itemize}
 \end{frame}
+
+\begin{frame}{ICAT: FACT camera}
+	\begin{itemize}
+		\item 1440 pixels
+		\item 4.5 degree FOV
+		\item Photo sensors: G-APDs
+		\item Solid light guides
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{ICATcamera.jpg}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{ICAT: FACT telescope}
+	\begin{itemize}
+		\item Location: 2200 m a.s.l., MAGIC site, Observatorio del Roque de los Muchachos, La Palma, Canary Islands, Spain
+		\item Hexagonal mirrors
+		\item Mirror area: 9.5 sqm
+		\item Energy domain: TeV
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=200px]{FACTtelescope.jpg}
+	\end{figure}
+\end{frame}
+
+
+
 
 \begin{frame}{ICAT: H.E.S.S.}
 	High Energy Stereoscopic System (H.E.S.S.)
+	Detection based on Cherenkov technique.
+	\newline
+	28 m H.E.S.S. II telescope vs. 12 m H.E.S.S. I telescopes
+	\begin{figure}[h]
+		\includegraphics[width=280px]{Array_overviewS.jpg}
+	\end{figure}
 \end{frame}
+
+
+
+
+\begin{frame}{ICAT: H.E.S.S. telescope}
+	Azimuth drive system:
+	\begin{itemize}
+		\item 12 wheels in 6 bogies on 36 m diameter rail
+		\item 4 wheels driven by motors
+		\item peak positioning speed 200 degree/minute
+		\item range $\pm$ 280 degree
+	\end{itemize}
+	\hfill \break
+	Elevation drive system:
+	\begin{itemize}
+		\item height of elevation axis: 24 m
+		\item 2 drive units with 2 motors each
+		\item peak positioning speed 100 degree/minute
+		\item range –125 degree +90 degree from vertical
+	\end{itemize}
+	\hfill \break
+	Dish dimensions 32.6 m by 24.3 m ( $\approx$ 28 m circular dish.)
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. telescope}
+	Elevation drive system
+	\begin{figure}[h]
+		\includegraphics[width=280px]{Elevation_Drive_1.JPG}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. mirror}
+	28 m H.E.S.S. II mirror:
+	\begin{itemize}
+		\item parabolic shape
+		\item Focal length: 36 m
+		\item Total mirror area: 614 $m^2$
+	\end{itemize}
+	\hfill \break
+	Mirror facets:
+	\begin{itemize}
+		\item 875 hexagonal facets of 90 cm (flat-to-flat) size
+		\item quartz-coated aluminized glass
+		\item weight: 25 kg per facet approx
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. mirror}
+	Facet alignment: each facet is equipped with 2 actuators with 2 $\mu\text{m}$ positioning step size, corresponding to a 1 arc second facet tilt.
+	\begin{figure}[h]
+		\includegraphics[width=280px]{2012_mirrors.JPG}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: H.E.S.S. camera}
+	The camera of the 28 m telescope:
+	\begin{itemize}
+		\item Photo sensors: 2048 1-1/4’ photo multipliers
+		\item Pixel size: 42 mm (hexagonal, flat-to-flat) $\approx$ 0.067 degree
+		\item Sensitive area/field of view: 3.2 degree on the sky
+		\item Signal recording: 1 GHz signal sampling; 2 gain channels or each pixel for large dynamic range; records signal amplitude, timing, and shape
+		\item Effective signal integration time: 16 ns
+		\item Image recording rate: 3600 images/second
+		\item Power consumption: 8 kW
+		\item Dimensions of camera body: 2.27 wide x 2.4 high x 1.84 deep (meter)
+		\item Camera weight: 2.8 tons
+		\item Camera support: Quadrupod
+	\end{itemize}
+\end{frame}
+
+
 
 
 \begin{frame}{ICAT: MAGIC}
