@@ -1,0 +1,763 @@
+\documentclass{beamer}
+
+% NOTE: reference
+% https://arxiv.org/pdf/1604.05488.pdf
+
+% HAGAR, first telescope to operate at an elevation > 4km
+% http://www.tifr.res.in/~hagar/
+% https://en.wikipedia.org/wiki/Indian_Astronomical_Observatory
+
+
+\mode<presentation> {\usetheme{Madrid}}
+
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{hyperref}
+\usepackage{flexisym}
+\usepackage{mhchem}
+\usepackage{textcomp}
+\usepackage[export]{adjustbox}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\graphicspath{{./img/}}
+
+\title[TeV Astrophysics]{Astronomical facilities and instrumentation in TeV}
+
+\author{Wei-Chih Huang}
+\institute[NTHU]{
+National Tsing Hua University \\
+\medskip
+}
+\date{April 23, 2019}
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}{Overview}
+	\tableofcontents
+\end{frame}
+
+
+
+%%%% Introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction to Tev $\gamma$ ray}
+\begin{frame}{Introduction to Tev $\gamma$ ray}
+	\begin{itemize}
+		\item $\gamma$ ray production mechanisms
+		\item Astrophysical sources of high-energy $\gamma$ rays
+		\item Detection method
+		\item Cherenkov radiation
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{$\gamma$ ray production mechanisms}
+\begin{frame}{$\gamma$ ray production mechanisms}
+	There are several ways to generate cosmic gamma rays:
+	\begin{enumerate}
+		\item $p_1 + p_2 \rightarrow \gamma + q_1 + ...$
+		\item $p^+ + p^- \rightarrow \gamma + \gamma$
+		\item $p_0 \rightarrow \gamma + q_1 + ...$
+		\item $p \xrightarrow{\text{accelerate}} \gamma + p$
+	\end{enumerate}
+
+	Examples:
+	\begin{enumerate}
+		\item $p_i = proton, nucleus, q = pion \text{ (which decay into a pair of gamma rays)}$
+		\item $p^+ = position, p^- = electron$
+		\item $p_0 = \text{some heavy nuclei}$
+		\item synchrotron radiation $P = \frac{2Ke^2 \gamma^4 v^4}{3c^3r^2} $
+	\end{enumerate}
+	\setlength{\fboxrule}{0.1pt}{hello}
+	\href{https://imagine.gsfc.nasa.gov/science/toolbox/gamma_generation.html}{some animation}
+	(the VIDEO)
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Origin of TeV Photons}
+\begin{frame}{Origin of TeV Photons}
+	leptonic models: inverse Compton scattering
+
+	$\gamma + e^-(e^+) \rightarrow \gamma + e^-(e^+) \Rightarrow \text{photon get energy} $
+	\newline
+	\newline
+	hadronic models: $\pi^0 \ \text{decay}$, synchrotron radiation from ultra-relativistic protons
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Astrophysical sources of high-energy $\gamma$ rays}
+\begin{frame}{Astrophysical sources of high-energy $\gamma$ rays}
+	\begin{enumerate}
+		\item pulsars
+		\item blazars
+		\item AGN
+		\item pulsar wind nebula
+		\item supernova remnant
+		\item some particular binary system
+		\item the centre of Galaxy
+	\end{enumerate}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Detection method}
+\begin{frame}{Ground-based detector}
+	challenges:
+	\begin{itemize}
+		\item High-energy $\gamma$ ray cannot be focused.
+		\item Above 100 MeV, $\gamma$ rays can only be detected by their conversion into $e^+ + e^-$ pairs in matter
+		\item electromagnetic cascade
+	\end{itemize}
+
+	solutions:
+	\begin{itemize}
+		\item more sensitive detector
+		\item higher altitude experiment
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cherenkov radiation}
+\begin{frame}{Cherenkov radiation}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{cara.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Cherenkov radiation}
+	\begin{figure}[h]
+		\includegraphics[width=170px]{atmosphere_cerenkov.png}
+	\end{figure}
+\end{frame}
+
+
+%%%% Detectors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detectors}
+\begin{frame}{Detectors}
+	\begin{itemize}
+		\item OSO-3 satellite detector
+		\item Current ICAT
+		\item Future ICAT
+	\end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{OSO-3 satellite}
+\begin{frame}{OSO-3 satellite}
+	OSO 3 (Orbiting Solar Observatory 3)
+	\begin{enumerate}
+		\item Mar. 8, 1967: launched on
+		\item Jun. 28, 1968: tape recorder failed
+		\item Nov. 10, 1969: last data were received
+		\item Apr. 4, 1982: burned up
+	\end{enumerate}
+	Result:
+	\newline
+	The MIT gamma-ray instrument obtained the first identification of high-energy cosmic gamma rays emanating from both galactic and extra-galactic sources
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Current ICAT}
+\begin{frame}{ICAT Properties}
+	Properties:
+	\begin{enumerate}
+		\item 50 GeV $\sim$ 50 TeV in photon energy range
+		\item ground-based detector
+		\item Wider energy regime than space-based instruments
+		\item largest telescope at the highest altitude
+		\item work by detecting Cherenkov radiation produced by high energy charged particles
+	\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}{ICAT components}
+	Imaging Atmospheric (or Air) Cherenkov Telescope or Technique
+	\newline
+	Operating IACT systems:
+	\begin{enumerate}
+		\item High Energy Stereoscopic System (H.E.S.S.)
+		\item Major Atmospheric Gamma Imaging Cherenkov Telescopes (MAGIC)
+		\item First G-APD Cherenkov Telescope (FACT)
+		\item Very Energetic Radiation Imaging Telescope Array System (VERITAS)
+		% \item Collaboration of Australia and Nippon for a Gamma Ray Observatory in the Outback (CANGAROO-III)
+	\end{enumerate}
+	\begin{figure}[h]
+		\includegraphics[width=350px]{IACT_tables.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ICAT components}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{ICATsystems.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT components}
+	\begin{figure}[h]
+		\includegraphics[width=200px]{dishes.png}
+		\caption{Illustration of the combination in H.E.S.S. (upper panel) of large dishes as in Whipple (lower left), fast and fine grained cameras as in CAT (lower centre) and stereoscopic observation as in HEGRA (lower right).}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT components}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{telescopes.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT components}
+	\begin{figure}[h]
+		\includegraphics[width=230px]{snesitivities.png}
+		\caption{Energy-flux sensitivities of current and future ground-based detectors - the IACT and EAS arrays in the energy range $10^{10}$ to $10^{15}$ eV (courtesy of G. Sinnis).}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT components}
+	\begin{itemize}
+		\item FACT
+		\item H.E.S.S.
+		\item MAGIC
+		\item VERITAS
+	\end{itemize}
+\end{frame}
+
+
+
+%%%%% shown detectors (modulize)
+\begin{frame}{ICAT: FACT}
+	G-APD: a new semiconductor device with excellent single photon response became available: the so-called Geiger-mode Avalanche Photodiodes.
+	\begin{figure}[h]
+		\includegraphics[width=280px]{PMTvsAPD.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: FACT}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{DetectorsGuidepost.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ICAT: FACT}
+	First G-APD Cherenkov Telescope (FACT), which is based on a former HEGRA telescope.
+	\newline
+	\\
+	Upgrade:
+	\begin{itemize}
+		\item refurbished mirrors
+		\item drive system
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: FACT}
+	Mirrors:
+	\begin{itemize}
+		\item hexagonal shape surface with total area 9.51$m^2$
+		\item re-machined by diamond-milling and subsequent coating with \ce{SiO2}.
+	\end{itemize}
+	\hfill \break
+	Drive system:
+	\begin{itemize}
+		\item down-scaled version of the drive system implemented in the MAGIC telescopes
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ICAT: FACT camera}
+	\begin{itemize}
+		\item 1440 pixels
+		\item 4.5 degree FOV
+		\item Photo sensors: G-APDs
+		\item Solid light guides
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{ICATcamera.jpg}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{ICAT: FACT telescope}
+	\begin{itemize}
+		\item Location: 2200 m a.s.l., MAGIC site, Observatorio del Roque de los Muchachos, La Palma, Canary Islands, Spain
+		\item Hexagonal mirrors
+		\item Mirror area: 9.5 sqm
+		\item Energy domain: TeV
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=200px]{FACTtelescope.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S.}
+	High Energy Stereoscopic System (H.E.S.S.)
+	\newline
+	28 m H.E.S.S. II telescope vs. 12 m H.E.S.S. I telescopes
+	\begin{figure}[h]
+		\includegraphics[width=280px]{Array_overviewS.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: H.E.S.S.}
+	Location: 23\textdegree16'18'' S, 16\textdegree30'00'' E at 1800 m
+	\newline
+	Detection method: Cherenkov technique
+	\newline
+	Target: gamma ray from Crab Nebula
+	\begin{figure}[h]
+		\includegraphics[width=280px]{HESS_location.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: H.E.S.S.}
+	The H.E.S.S. Collaboration
+	\begin{itemize}
+		\item 260 scientists
+		\item 40 scientific institutions
+		\item over 13 different countries
+	\end{itemize}
+	\begin{figure}[h]
+		\includegraphics[width=280px]{hess_collaboration.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: H.E.S.S.}
+	Brief history:
+	\begin{enumerate}
+		\item summer 2002, first operation
+		\item Sep 28, 2004, officially inaugurated
+		\item 2006, ranked as the 10th most influential observatory worldwide
+		\item July 2012, A much larger fifth telescope - H.E.S.S. II installed
+		\item Sept. 30, 2012, open day for giant new H.E.S.S. II telescope
+		\item 2015-2016, cameras full refurbished
+		\item Sep. 27th, 2016, new camera inaugurated
+	\end{enumerate}
+	\begin{figure}[h]
+		\includegraphics[width=120px]{telescopes-rank.jpg}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{ICAT: H.E.S.S. telescope}
+	Azimuth drive system:
+	\begin{itemize}
+		\item 12 wheels in 6 bogies on 36 m diameter rail
+		\item 4 wheels driven by motors
+		\item peak positioning speed 200 degree/minute
+		\item range $\pm$ 280 degree
+	\end{itemize}
+	\hfill \break
+	Elevation drive system:
+	\begin{itemize}
+		\item height of elevation axis: 24 m
+		\item 2 drive units with 2 motors each
+		\item peak positioning speed 100 degree/minute
+		\item range –125 degree +90 degree from vertical
+	\end{itemize}
+	\hfill \break
+	Dish dimensions 32.6 m by 24.3 m ( $\approx$ 28 m circular dish.)
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. telescope}
+	Elevation drive system
+	\, \, \, (the VIDEO)
+	\begin{figure}[h]
+		\includegraphics[width=280px]{Elevation_Drive_1.JPG}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. mirror}
+	28 m H.E.S.S. II mirror:
+	\begin{itemize}
+		\item parabolic shape
+		\item Focal length: 36 m
+		\item Total mirror area: 614 $m^2$
+	\end{itemize}
+	\hfill \break
+	Mirror facets:
+	\begin{itemize}
+		\item 875 hexagonal facets of 90 cm (flat-to-flat) size
+		\item quartz-coated aluminized glass
+		\item weight: 25 kg per facet approx
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ICAT: H.E.S.S. mirror}
+	Facet alignment: each facet is equipped with 2 actuators with 2 $\mu\text{m}$ positioning step size, corresponding to a 1 arc second facet tilt.
+	\begin{figure}[h]
+		\includegraphics[width=280px]{2012_mirrors.JPG}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: H.E.S.S. camera}
+	The camera of the 28 m telescope:
+	\begin{itemize}
+		\item Photo sensors: 2048 1-1/4’ photo multipliers
+		\item Pixel size: 42 mm (hexagonal, flat-to-flat) $\approx$ 0.067 degree
+		\item Sensitive area/field of view: 3.2 degree on the sky
+		\item Signal recording: 1 GHz signal sampling; 2 gain channels or each pixel for large dynamic range; records signal amplitude, timing, and shape
+		\item Effective signal integration time: 16 ns
+		\item Image recording rate: 3600 images/second
+		\item Power consumption: 8 kW
+		\item Dimensions of camera body: 2.27 wide x 2.4 high x 1.84 deep (meter)
+		\item Camera weight: 2.8 tons
+		\item Camera support: Quadrupod
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{ICAT: MAGIC}
+    Major Atmospheric Gamma Imaging Cherenkov Telescopes (MAGIC)
+    \begin{figure}[h]
+        \includegraphics[width=280px]{MAGIC_mirror.jpg}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+    Location: 28 \textdegree45'43'' N, 17\textdegree53'24'' W at 2200 m
+    \newline
+    Detection method: Cherenkov technique
+    \begin{figure}[h]
+        \includegraphics[width=280px]{MAGIC_location.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{ICAT: MAGIC}
+    The first and most observed source is the Crab Nebula
+    \begin{itemize}
+        \item Accretion of black holes in active galactic nuclei
+        \item Supernova remnants
+        \item Other galactic sources such as pulsar wind nebulae or X-ray binaries
+        \item Gamma ray bursts
+        \item Unidentified EGRET or Fermi sources
+        \item Annihilation of dark matter
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+    MAGIC I telescope component
+    \begin{figure}[h]
+        \includegraphics[width=165px]{MAGIC_I_component.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+	\begin{itemize}
+		\item 150 scientists
+		\item 20 scientific institutions
+		\item over 20 different countries
+    \end{itemize}
+    \begin{figure}[h]
+        \includegraphics[width=280px]{CollaborationPicture2010.jpg}
+        \caption{fall 2010 collaboration meeting in Split, Croatia}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+	Brief history:
+	\begin{enumerate}
+        \item mid-1994, project proposal
+        \item 1998, construction started
+        \item 2004, observation started
+    \end{enumerate}
+    \begin{figure}[h]
+        \includegraphics[width=230px]{magic-coll-old1.jpeg}
+        \caption{A historic photo, from the beginning of our collaboration. It was taken at the first MAGIC design meeting, 1995, in The Eng, Austria.}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+    MAGIC-II vs MAGIC-I
+    \begin{itemize}
+        \item most fundamental parameters
+        \item higher sensitivity
+        \item Lower energy threshold
+        \item higher QE photosensors
+    \end{itemize}
+
+    \begin{figure}[h]
+        \includegraphics[width=250px]{MAGIC_12.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC telescope}
+	\begin{itemize}
+        \item Lightweight carbon fibre frame
+        \item 396 separate hexagonal photomultiplier detectors in the center (diameter: 2.54 cm) surrounded by 180 larger photomultiplier detectors (diameter: 3.81 cm).
+        \item Data are transferred in analogue form by fibre optic cables
+        \item Signal digitization is done via an ADC (analog-digital converter) of frequency 2 GHz
+        \item Total weight of 40,000 kg
+        \item rotate 7 degrees per second
+        \item energy range: 50GeV $\sim$ 50TeV
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC mirror}
+    MAGIC-I:
+	\begin{itemize}
+        \item reflective mirror surface: 236 $\text{m}^2$ consisting of
+        \item 956 50cm×50cm aluminium individual reflectors
+        \item 13 kW heating system
+    \end{itemize}
+    \hfill \break
+    MAGIC-II:
+    \begin{itemize}
+        \item 246 99cm×99cm mirror panels
+        \item focal length to diameter ration is f/D = 1.03
+    \end{itemize}
+
+    \begin{figure}
+        \centering
+        \subfloat{\includegraphics[width=130px]{MAGICMirror.jpg} }
+        \qquad
+        \subfloat{\includegraphics[width=120px]{MAGIC_telescope.jpg} }
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC camera}
+    \begin{itemize}
+        \item 1039 photomultiplier tubes(both MAGIC telescopes)
+        \item view: 3.5 degree
+    \end{itemize}
+
+    \begin{figure}
+        \centering
+        \subfloat{\includegraphics[width=130px]{MAGIC_PMTs.jpg}}
+        \qquad
+        \subfloat{\includegraphics[width=120px]{MAGIC_Camera.jpg}}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC camera}
+    \begin{figure}[h]
+        \includegraphics[width=300px]{MAGIC_PMTs.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: MAGIC}
+    MAGIC result:
+    \begin{itemize}
+        \item Discovered several galactic and extra-galactic sources
+        \item Addresses many exciting physics topics
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+    Very Energetic Radiation Imaging Telescope Array System (VERITAS)
+    \begin{figure}[h]
+        \includegraphics[width=300px]{VERITAS.jpg}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+    Location: 31 \textdegree43043'' N, 110\textdegree57'07'' W at 1268 m
+    \newline
+    Detection method:  Cherenkov technique
+    \begin{figure}[h]
+        \includegraphics[width=300px]{VERITAS_location.png}
+    \end{figure}
+\end{frame}
+
+
+% target source
+\begin{frame}{ICAT: VERITAS}
+    observed sources
+    \begin{itemize}
+        \item blazars
+        \item black holes at the centres of active galaxies
+        \item pulsars
+        \item X-ray binaries
+        \item gamma-ray bursts
+        \item supernova remnants
+        \item globular clusters
+        \item galaxies including our own Milky Way Galaxy.
+        \item Galaxy clusters
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+    \begin{figure}[h]
+        \includegraphics[width=300px]{VERITAS_source_map.png}
+        \caption{The VERITAS source map, in Galactic coordinates, as of July 2011}
+    \end{figure}
+\end{frame}
+
+
+% collaboration
+\begin{frame}{ICAT: VERITAS}
+    Fred Lawrence Whipple Observatory
+    \begin{itemize}
+        \item $\sim$ 80 scientists
+        \item $>$ 4 countries
+    \end{itemize}
+    \begin{figure}[h]
+        \includegraphics[width=270px]{VERITAS_collaboration.png}
+    \end{figure}
+\end{frame}
+
+
+% history
+\begin{frame}{ICAT: VERITAS}
+    Brief history:
+    \begin{enumerate}
+        \item April 2003, Installation of VERITAS prototype telescope at the FLWO Basecamp
+        \item February 2004, First light of VERITAS prototype
+        \item January 2007, Completion of 4 telescope array
+        \item April 27-28 2007, First Light Celebration
+        \item Summer 2009, Displacement of Telescope 1 to new location for improved sensitivity
+        \item Summer 2012, Upgrade of camera PMTs to high-quantum-efficiency PMTs
+    \end{enumerate}
+\end{frame}
+
+
+% telescope
+\begin{frame}{ICAT: VERITAS}
+    VERITAS telescope
+    \begin{itemize}
+        \item based on Davies–Cotton design
+        \item 12 m radius spherical surface
+        \item echo reflector carries 315 mirrors
+        \item mirror area $\sim$ 100 $ \text{m}^2$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+    \begin{figure}[h]
+        \includegraphics[width=150px]{VERITAS_telescope.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ICAT: VERITAS}
+    blue: original layout
+    \newline
+    red: new layout
+    \begin{figure}[h]
+        \includegraphics[width=330px]{VERITAS_array.png}
+    \end{figure}
+\end{frame}
+
+
+% camera
+\begin{frame}{ICAT: VERITAS}
+    VERITAS camera
+    \begin{itemize}
+        \item 499 pixels/camera
+        \item Energy range: 50 GeV to 30 TeV
+        \item Energy resolution: 20 \% \@ 1 TeV
+        \item Angular resolution (68 \% containment): 0.08° \@ 1 TeV
+        \item Point source sensitivity: 1 \% Crab in $\sim$ 25h
+        \item 28 mm Photonis phototubes
+    \end{itemize}
+    \begin{figure}[h]
+        \includegraphics[width=180px]{VERITAS_camera.png}
+    \end{figure}
+\end{frame}
+
+
+% mirror
+\begin{frame}{ICAT: VERITAS}
+    VERITAS mirror
+    \begin{itemize}
+        \item area is approximately 106 $\text{m}^2$
+        \item  24m radius of curvature of each mirror
+    \end{itemize}
+
+    \begin{figure}[h]
+        \includegraphics[width=220px]{VERITAS_mirror.jpg}
+    \end{figure}
+\end{frame}
+
+
+% upgrade
+\begin{frame}{ICAT: VERITAS}
+    VERITAS upgrade
+    \begin{itemize}
+        \item  photomultiplier tubes: more sensitive, superbialkali devices
+        \item trigger system: higher speed, FGPA-based device
+        \item Upgrading inter-telescope networking and communications
+        \item Adding instrumentation to the central pixels $\Rightarrow$ high-speed optical monitoring and stellar intensity interferometry
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{ICAT: VERITAS}
+    \begin{figure}[h]
+        \includegraphics[width=300px]{VERITAS_upgrade.png}
+    \end{figure}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Future ICAT}
+\begin{frame}{Future ICAT improvement}
+	Improvement:
+	\begin{enumerate}
+		\item enhance flux sensitivities in TeV regime (0.1-10 TeV)
+		\item expand energy domain: down to 10 GeV (multi-GeV regime) and well beyond 10 TeV (sub-PeV regime)
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Future ICAT: TeV regime}
+	\begin{enumerate}
+		\item minimum detectable energy flux: $10$ erg$/ \text{cm}^2 $ s
+		\item angular resolution: $\delta \theta \leq 3$ arc minutes.
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Next generation CTA}
+	\begin{figure}[h]
+		\includegraphics[width=300px]{next-generationCTA.png}
+		\caption{Possible layout of the next-generation CTA instrument}
+	\end{figure}
+\end{frame}
+
+
+
+
+\end{document}
